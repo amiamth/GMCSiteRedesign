@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sprints-7</groupId>
+  <artifactId>sprints-7-soapui-project</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>sprints-7-soapui-project Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <!--<dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>-->
+  <!--Add the repository for where Maven can find the soapUI Plugin-->
+  <pluginRepositories>
+     <pluginRepository>
+        <id>eviwarePluginRepository</id>
+        <url>http://www.eviware.com/repository/maven2/</url>
+     </pluginRepository>
+  </pluginRepositories>
+  <build>
+  <plugins>
+    <plugin>
+      <groupId>eviware</groupId>
+      <artifactId>maven-soapui-plugin</artifactId>
+      <version>4.0.0</version>
+      <configuration>
+        <projectFile>${basedir}/src/test/resources/Sprint-7-soapui-project.xml</projectFile>
+        <outputFolder>${basedir}/target/surefire-reports</outputFolder>
+        <junitReport>true</junitReport>
+        <exportwAll>true</exportwAll>
+        <printReport>true</printReport>
+        <testFailIgnore>true</testFailIgnore>
+      </configuration>
+      <executions>
+        <execution>
+          <!-- soap ui plugin must run _before_ the test phase -->
+          <phase>process-test-classes</phase>
+          <goals>
+            <goal>test</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>
+<reporting>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-report-plugin</artifactId>
+      <version>2.13</version>
+      <configuration>
+        <outputDirectory>target/site/soapui</outputDirectory>
+        <reportsDirectories>
+          <reportsDirectories>target/soapui/</reportsDirectories>
+        </reportsDirectories>
+      </configuration>
+    </plugin>
+  </plugins>
+</reporting>
+</project>

@@ -1,0 +1,53 @@
+2013-03-11 19:48:13,557 WARN  [SoapUI] Missing folder [C:\sprints-7-soapui-project\.\ext] for external libraries
+2013-03-11 19:48:13,726 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\aamarna\soapui-settings.xml]
+2013-03-11 19:48:14,400 INFO  [WsdlProject] Loaded project from [file:/C:/sprints-7-soapui-project/src/test/resources/Sprint-7-soapui-project.xml]
+2013-03-11 19:48:14,839 INFO  [SoapUITestCaseRunner] Running soapUI tests in project [Sprint 7]
+2013-03-11 19:48:14,840 INFO  [SoapUITestCaseRunner] Running Project [Sprint 7], runType = SEQUENTIAL
+2013-03-11 19:48:14,849 INFO  [SoapUITestCaseRunner] Running soapUI testcase [Login & Logout TestCase]
+2013-03-11 19:48:14,868 INFO  [SoapUITestCaseRunner] running step [0.Positive Scenario]
+2013-03-11 19:48:16,147 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:16,148 INFO  [SoapUITestCaseRunner] running step [User Already Logged In]
+2013-03-11 19:48:16,283 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:16,284 INFO  [SoapUITestCaseRunner] Assertion [errorcode] has status VALID
+2013-03-11 19:48:16,287 INFO  [SoapUITestCaseRunner] running step [1.Logout]
+2013-03-11 19:48:16,869 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:16,870 INFO  [SoapUITestCaseRunner] running step [Invalid email id]
+2013-03-11 19:48:17,011 INFO  [SoapUITestCaseRunner] running step [Invalid password]
+2013-03-11 19:48:21,159 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:21,160 INFO  [SoapUITestCaseRunner] Assertion [errorcode] has status VALID
+2013-03-11 19:48:21,162 INFO  [SoapUITestCaseRunner] running step [Blank Password]
+2013-03-11 19:48:21,284 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:21,285 INFO  [SoapUITestCaseRunner] Assertion [errorcode] has status VALID
+2013-03-11 19:48:21,286 INFO  [SoapUITestCaseRunner] Assertion [message] has status VALID
+2013-03-11 19:48:21,288 INFO  [SoapUITestCaseRunner] running step [Blank eMail]
+2013-03-11 19:48:21,817 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:21,818 INFO  [SoapUITestCaseRunner] Assertion [errorcode] has status VALID
+2013-03-11 19:48:21,819 INFO  [SoapUITestCaseRunner] Assertion [message] has status VALID
+2013-03-11 19:48:21,822 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [Login & Logout TestCase], time taken: 6785ms, status: FINISHED
+2013-03-11 19:48:21,830 INFO  [SoapUITestCaseRunner] Running soapUI testcase [AddToCart TestCase]
+2013-03-11 19:48:21,830 INFO  [SoapUITestCaseRunner] running step [Login]
+2013-03-11 19:48:22,461 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:22,470 INFO  [SoapUITestCaseRunner] running step [Add to Cart]
+2013-03-11 19:48:23,263 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:23,266 INFO  [SoapUITestCaseRunner] running step [Get Cart]
+2013-03-11 19:48:23,386 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status FAILED
+2013-03-11 19:48:23,386 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Missing token [200] in Response
+2013-03-11 19:48:23,388 ERROR [SoapUITestCaseRunner] Get Cart failed, exporting to [C:\sprints-7-soapui-project/target/surefire-reports\Sprint_7_TestSuite-AddToCart_TestCase-Get_Cart-0-FAILED.txt]
+2013-03-11 19:48:23,397 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [AddToCart TestCase], time taken: 1494ms, status: FAILED
+2013-03-11 19:48:23,401 INFO  [SoapUITestCaseRunner] Running soapUI testcase [Get Cart TestCase]
+2013-03-11 19:48:23,401 INFO  [SoapUITestCaseRunner] running step [Add to Cart]
+2013-03-11 19:48:23,973 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:23,974 INFO  [SoapUITestCaseRunner] running step [Get User Cart - WMTRP-1999]
+2013-03-11 19:48:24,086 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status FAILED
+2013-03-11 19:48:24,088 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Missing token [200] in Response
+2013-03-11 19:48:24,090 ERROR [SoapUITestCaseRunner] Get User Cart - WMTRP-1999 failed, exporting to [C:\sprints-7-soapui-project/target/surefire-reports\Sprint_7_TestSuite-Get_Cart_TestCase-Get_User_Cart__WMTRP1999-0-FAILED.txt]
+2013-03-11 19:48:24,094 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [Get Cart TestCase], time taken: 668ms, status: FAILED
+2013-03-11 19:48:24,098 INFO  [SoapUITestCaseRunner] Running soapUI testcase [Get Payment Cards TestCase]
+2013-03-11 19:48:24,100 INFO  [SoapUITestCaseRunner] running step [Login]
+2013-03-11 19:48:24,286 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:24,287 INFO  [SoapUITestCaseRunner] running step [Get Cards with atleast one card]
+2013-03-11 19:48:24,468 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:24,469 INFO  [SoapUITestCaseRunner] running step [Logout]
+2013-03-11 19:48:24,602 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2013-03-11 19:48:24,603 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [Get Payment Cards TestCase], time taken: 479ms, status: FINISHED
+2013-03-11 19:48:24,605 INFO  [SoapUITestCaseRunner] Project [Sprint 7] finished with status [FAILED] in 9761ms
